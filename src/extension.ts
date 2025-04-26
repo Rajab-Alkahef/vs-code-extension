@@ -36,9 +36,9 @@ function runPythonScript(scriptPath: string, extensionPath: string) {
 	// Determine Python binary based on OS
 	let pythonPath: string;
 	if (process.platform === "win32") {
-		// pythonPath = "C:/msys64/mingw64/bin/python.exe";
+		pythonPath = "C:/msys64/mingw64/bin/python.exe";
 
-		pythonPath = path.join(extensionPath, "python", "python.exe"); // Windows
+		// pythonPath = path.join(extensionPath, "python", "python.exe"); // Windows
 	} else {
 		pythonPath = path.join(extensionPath, "python", "bin", "python"); // macOS/Linux
 	}
